@@ -1,0 +1,6 @@
+package Entities;
+
+public enum Role {
+		CHEF_PROJET, ADMINISTRATEUR, INGENIEUR, TECHNICIEN,DEVELOPPEUR,RH,CEO,EMPLOYE,
+	
+}
