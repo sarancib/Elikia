@@ -1,0 +1,9 @@
+entities\Entreprise.class
+service\intrf\EntrepriseServiceLocal.class
+entities\Sub.class
+service\impl\EntrepriseService.class
+entities\Role.class
+entities\Offre.class
+entities\Employe.class
+service\intrf\EntrepriseServiceRemote.class
+entities\Requirements.class
