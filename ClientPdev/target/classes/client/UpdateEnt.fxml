@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="459.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.UpdateEntController">
+   <children>
+      <AnchorPane fx:id="anchor" prefHeight="517.0" prefWidth="584.0">
+         <children>
+            <Label layoutX="25.0" layoutY="27.0" text="Update your Campany:" />
+            <TextField fx:id="slogan" layoutX="114.0" layoutY="62.0" />
+            <TextField fx:id="mail" layoutX="114.0" layoutY="105.0" />
+            <TextArea fx:id="desc" layoutX="114.0" layoutY="148.0" prefHeight="75.0" prefWidth="200.0" />
+            <ColorPicker fx:id="backcolor" layoutX="114.0" layoutY="309.0" />
+            <ColorPicker fx:id="bordcolor" layoutX="114.0" layoutY="344.0" />
+            <ColorPicker fx:id="textcolor" layoutX="114.0" layoutY="384.0" onAction="#changecolor" />
+            <ChoiceBox fx:id="textfont" layoutX="114.0" layoutY="423.0" onAction="#changefont" prefHeight="25.0" prefWidth="140.0" />
+            <Label layoutX="39.0" layoutY="66.0" text="Slogan" />
+            <Label layoutX="40.0" layoutY="109.0" text="Email" />
+            <Label layoutX="29.0" layoutY="162.0" text="Discription" />
+            <Label layoutX="23.0" layoutY="348.0" text="Border Color" />
+            <Label layoutX="27.0" layoutY="388.0" text="Text Color" />
+            <Label layoutX="28.0" layoutY="427.0" text="Text Font" />
+            <Label fx:id="sample" layoutX="142.0" layoutY="464.0" prefHeight="17.0" prefWidth="41.0" text="Sample">
+               <font>
+                  <Font name="Forte" size="12.0" />
+               </font>
+            </Label>
+            <Text layoutX="9.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Background Color" wrappingWidth="95.267578125" />
+            <Text layoutX="356.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" />
+            <Text layoutX="356.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+            <Text layoutX="356.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" />
+            <Text layoutX="356.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+            <TextField fx:id="fnamehr" layoutX="421.0" layoutY="70.0" />
+            <TextField fx:id="lnamehr" layoutX="421.0" layoutY="105.0" />
+            <TextField fx:id="fnamepm" layoutX="421.0" layoutY="215.0" />
+            <TextField fx:id="lnamepm" layoutX="421.0" layoutY="255.0" />
+            <Button fx:id="ajoutent" layoutX="438.0" layoutY="411.0" mnemonicParsing="false" onAction="#ajoutEnt" text="Apply changes" />
+            <CheckBox fx:id="rhchange" layoutX="356.0" layoutY="44.0" mnemonicParsing="false" text="Change RH ?" />
+            <CheckBox fx:id="pmchange" layoutX="356.0" layoutY="192.0" mnemonicParsing="false" text="Change project manager?" />
+            <Label layoutX="14.0" layoutY="280.0" text="Colors must be reconfigured or they will be set to Default" />
+            <Button fx:id="choose" layoutX="115.0" layoutY="238.0" mnemonicParsing="false" onAction="#addimage" text="choose" />
+            <Label fx:id="logo" layoutX="40.0" layoutY="242.0" text="Logo" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

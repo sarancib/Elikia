@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ListSubController">
+   <children>
+      <AnchorPane fx:id="anchor" prefHeight="495.0" prefWidth="252.0">
+         <children>
+            <TableView fx:id="table" layoutX="16.0" layoutY="34.0" prefHeight="428.0" prefWidth="221.0">
+               <columns>
+                  <TableColumn fx:id="fname" prefWidth="112.0" text="First name" />
+                  <TableColumn fx:id="lname" prefWidth="108.0" text="Last name" />
+               </columns>
+            </TableView>
+            <Label fx:id="title" layoutX="14.0" layoutY="6.0" prefHeight="17.0" prefWidth="74.0" text="Subscribers" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
