@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Candidatures.DecisionsController">
+   <children>
+      <Pane layoutX="-116.0" layoutY="-183.0" prefHeight="946.0" prefWidth="1012.0" style="-fx-background-color: #B2D8D8;">
+         <children>
+            <TableView fx:id="tableId11" layoutX="270.0" layoutY="294.0" prefHeight="302.0" prefWidth="554.0" style="-fx-background-color: #F4E9CD;">
+               <columns>
+                  <TableColumn fx:id="ComnName11" prefWidth="184.0" style="-fx-background-color: #eea2ad;" text="Candidacy's name" />
+                  <TableColumn fx:id="na" prefWidth="184.0" style="-fx-background-color: #eea2ad;" text="Candidate" />
+                  <TableColumn fx:id="da" prefWidth="184.0" style="-fx-background-color: #eea2ad;" text="Decision" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tableId1" layoutX="389.0" layoutY="646.0" prefHeight="286.0" prefWidth="371.0" style="-fx-background-color: #F4E9CD;">
+               <columns>
+                  <TableColumn fx:id="ComnName1" prefWidth="184.0" style="-fx-background-color: #eea2ad;" text="Name" />
+                  <TableColumn fx:id="columnType1" prefWidth="184.0" style="-fx-background-color: #eea2ad;" text="Reason for rejection" />
+               </columns>
+            </TableView>
+            <Button fx:id="back" layoutX="855.0" layoutY="187.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="151.0" style="-fx-background-color: #F4E9CD;" text="Back" textFill="#251b1d">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="407.0" layoutY="229.0" text="Candidacies accepted" textFill="#eea2ad">
+               <font>
+                  <Font name="System Italic" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="426.0" layoutY="595.0" text="Candidacies refused" textFill="#eea2ad">
+               <font>
+                  <Font name="System Italic" size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="excel" layoutX="836.0" layoutY="435.0" mnemonicParsing="false" onAction="#Getexcel" prefHeight="49.0" prefWidth="162.0" style="-fx-background-color: #F4E9CD;" text="Get in excel file" textFill="#eea2ad">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
